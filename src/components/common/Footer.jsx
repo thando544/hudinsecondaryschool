@@ -88,30 +88,26 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-
-        {/* Portals */}
         <div>
           <h4 className="text-white font-semibold text-base mb-4">Portals</h4>
           <ul className="space-y-3 text-sm">
             <li>
-              <a href="/student-portal" className="hover:text-white">
+              <a href="/student/dashboard" className="hover:text-white">
                 Student Portal
               </a>
             </li>
             <li>
-              <a href="/parent-portal" className="hover:text-white">
+              <a href="/parent/dashboard" className="hover:text-white">
                 Parent Portal
               </a>
             </li>
             <li>
-              <a href="/staff" className="hover:text-white">
-                Staff Login
+              <a href="/admin/dashboard" className="hover:text-white">
+                Admin Portal
               </a>
             </li>
           </ul>
         </div>
-
-        {/* Contact */}
         <div className="space-y-2">
           <h4 className="text-white font-semibold text-base mb-4">
             Contact Us
@@ -134,8 +130,6 @@ export default function Footer() {
           </a>
         </div>
       </div>
-
-      {/* Bottom Bar */}
       <div
         className="
           border-t border-slate-700

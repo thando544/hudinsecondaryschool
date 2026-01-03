@@ -2,7 +2,6 @@ export default function Contact() {
   return (
     <main className="pt-32 pb-24 bg-white">
       <div className="container mx-auto px-6 max-w-6xl">
-        {/* Header */}
         <section className="text-center max-w-3xl mx-auto">
           <h1 className="text-4xl font-bold text-[#0A1F44]">
             Contact Hudin Secondary School
@@ -13,9 +12,8 @@ export default function Contact() {
           </p>
         </section>
 
-        {/* Content */}
+
         <section className="mt-20 grid md:grid-cols-2 gap-16">
-          {/* Contact Details */}
           <div>
             <h2 className="text-2xl font-semibold text-[#0A1F44] mb-6">
               Get in Touch
@@ -35,14 +33,11 @@ export default function Contact() {
                 <strong>Office Hours:</strong> Monday – Friday, 08:00 – 16:30
               </p>
             </div>
-
-            {/* Map Placeholder */}
             <div className="mt-8 h-64 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400">
               Map Placeholder
             </div>
           </div>
 
-          {/* Contact Form */}
           <div className="border rounded-xl p-8">
             <h2 className="text-2xl font-semibold text-[#0A1F44] mb-6">
               Send Us a Message

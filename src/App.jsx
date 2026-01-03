@@ -7,7 +7,7 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <main className="bg-linear-to-r from-gray-900 via-gray-500 to-gray-200">
+      <main className="mt-[80px]">
       <AppRoutes/>
       </main>
       <Footer />

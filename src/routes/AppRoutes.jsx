@@ -1,0 +1,21 @@
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Home from "../pages/public/Home";
+import About from "../pages/public/About";
+import Gallery from "../pages/public/Gallery";
+import Contact from "../pages/public/Contact"
+import Login from "../pages/auth/Login"
+
+export default function AppRoutes() {
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/contact" element={<Contact/>} />
+        <Route path="/auth/login" element={<Login/>} />
+      </Routes>
+    </>
+  );
+}

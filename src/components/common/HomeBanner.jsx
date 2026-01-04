@@ -2,7 +2,6 @@ export default function HeroSection() {
   return (
     <section className="min-h-screen bg-gradient-to-br from-white via-gray-50 to-gray-100 flex items-center">
       <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-14 items-center">
-        {/* LEFT CONTENT */}
         <div>
           <span className="inline-block mb-4 px-4 py-1 text-sm rounded-full bg-blue-100 text-blue-800">
             Victoria Falls • Zimbabwe
@@ -14,9 +13,9 @@ export default function HeroSection() {
           </h1>
 
           <p className="mt-6 text-gray-600 max-w-xl text-lg">
-            Hudin Secondary School provides a disciplined, supportive, and
-            innovative learning environment that empowers students to achieve
-            academic success and personal growth.
+            Hudini School of Science and Technology College provides a
+            disciplined, supportive, and innovative learning environment that
+            empowers students to achieve academic success and personal growth.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
@@ -27,8 +26,6 @@ export default function HeroSection() {
               View School Prospectus
             </button>
           </div>
-
-          {/* TRUST BADGES */}
           <div className="mt-10 grid grid-cols-3 gap-6 text-center">
             <div>
               <h3 className="text-2xl font-bold text-[#0A1F44]">95%</h3>
@@ -44,8 +41,6 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
-
-        {/* RIGHT FORM */}
         <div className="bg-white shadow-xl rounded-xl p-8">
           <h3 className="text-2xl font-bold text-[#0A1F44] mb-2">
             Student Enrollment

@@ -3,7 +3,6 @@ import { FaFacebookF, FaWhatsapp, FaMapMarkerAlt } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="bg-slate-900 text-slate-300">
-      {/* Main Content */}
       <div
         className="
           max-w-7xl mx-auto px-4 py-12

@@ -31,32 +31,53 @@ export default function Gallery() {
   };
 
   return (
-    <main className="pt-32 pb-24 bg-white">
-      <div className="container mx-auto px-6 max-w-6xl">
+    <main className="pt-32 pb-24 bg-slate-50">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* HEADER */}
         <section className="text-center max-w-3xl mx-auto">
-          <h1 className="text-4xl font-bold text-[#0A1F44]">School Gallery</h1>
+          <h1 className="text-4xl font-bold text-[#0A1F44]">
+            School Life Gallery
+          </h1>
           <p className="mt-6 text-gray-600 text-lg">
-            A glimpse into school life, academic activities, and special events
-            at Hudin Secondary School.
+            Moments from academics, sports, cultural events, and daily life at
+            Hudin Secondary School.
           </p>
         </section>
-        <section className="mt-20 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+
+        {/* ASYMMETRIC GRID */}
+        <section className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 auto-rows-[220px] gap-6">
           {images.map((src, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-xl cursor-pointer"
               onClick={() => setCurrentIndex(index)}
+              className={`
+                relative overflow-hidden rounded-2xl cursor-pointer group
+                shadow-md hover:shadow-xl transition
+                ${index === 0 ? "lg:col-span-2 lg:row-span-2" : ""}
+                ${index === 3 ? "lg:row-span-2" : ""}
+              `}
             >
               <img
                 src={src}
                 alt={`Gallery ${index + 1}`}
-                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-[#0A1F44]/20 opacity-0 group-hover:opacity-100 transition" />
+
+              {/* OVERLAY */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition" />
+
+              {/* TEXT */}
+              <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition">
+                <p className="text-sm font-semibold tracking-wide">
+                  View Photo
+                </p>
+              </div>
             </div>
           ))}
         </section>
       </div>
+
+      {/* MODAL */}
       {currentIndex !== null && (
         <div
           className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center"
@@ -66,29 +87,32 @@ export default function Gallery() {
             onClick={closeModal}
             className="absolute top-6 right-6 text-white hover:text-gray-300"
           >
-            <X size={30} />
+            <X size={32} />
           </button>
+
           <button
             onClick={showPrev}
             className="absolute left-6 text-white hover:text-gray-300"
           >
-            <ChevronLeft size={40} />
+            <ChevronLeft size={44} />
           </button>
+
           <div
-            className="max-w-5xl w-full px-6"
+            className="max-w-6xl w-full px-6"
             onClick={(e) => e.stopPropagation()}
           >
             <img
               src={images[currentIndex]}
               alt="Gallery preview"
-              className="w-full max-h-[80vh] object-contain rounded-lg"
+              className="w-full max-h-[85vh] object-contain rounded-xl shadow-2xl"
             />
           </div>
+
           <button
             onClick={showNext}
             className="absolute right-6 text-white hover:text-gray-300"
           >
-            <ChevronRight size={40} />
+            <ChevronRight size={44} />
           </button>
         </div>
       )}

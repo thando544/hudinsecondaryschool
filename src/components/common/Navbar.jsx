@@ -14,12 +14,15 @@ export default function Navbar() {
   return (
     <header className="bg-white shadow-sm fixed top-0 left-0 right-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* LOGO */}
-        <Link to="/" className="text-2xl font-bold text-navy">
-          Hudin School
+        <Link to="/" className="w-[90px] h-[60px] font-bold text-navy">
+          <img
+            src="https://res.cloudinary.com/dptomokgz/image/upload/v1767714981/hudiniLogo_vbdark.png"
+            alt="hudini logo"
+            className="w-full h-full object-center object-contain"
+          />
         </Link>
 
-        {/* DESKTOP NAV */}
+   
         <nav className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
             <NavLink
@@ -38,9 +41,11 @@ export default function Navbar() {
           ))}
         </nav>
 
-
         <div className="hidden md:flex items-center gap-4">
-          <Link to="/auth/login" className="text-navy font-medium hover:underline">
+          <Link
+            to="/auth/login"
+            className="text-navy font-medium hover:underline"
+          >
             Login
           </Link>
 

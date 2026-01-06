@@ -10,7 +10,6 @@ export default function Login() {
           Portal Login
         </h1>
 
-        {/* Role Selector */}
         <div className="flex justify-center gap-3 mt-6">
           {["student", "parent", "staff"].map((r) => (
             <button
@@ -24,8 +23,6 @@ export default function Login() {
             </button>
           ))}
         </div>
-
-        {/* Login Form */}
         <form className="mt-8 space-y-5">
           <input className="border p-3 rounded w-full" placeholder="Email" />
           <input

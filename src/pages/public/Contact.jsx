@@ -1,4 +1,9 @@
+import React from "react";
+
 export default function Contact() {
+
+
+
   return (
     <main className="pt-32 pb-24 bg-white">
       <div className="container mx-auto px-6 max-w-6xl">
@@ -52,6 +57,7 @@ export default function Contact() {
                   type="text"
                   className="w-full border rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#0A1F44]"
                   placeholder="Enter your full name"
+                  required={true}
                 />
               </div>
 
@@ -63,6 +69,7 @@ export default function Contact() {
                   type="email"
                   className="w-full border rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#0A1F44]"
                   placeholder="Enter your email"
+                  required={true}
                 />
               </div>
 
@@ -74,6 +81,7 @@ export default function Contact() {
                   type="text"
                   className="w-full border rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#0A1F44]"
                   placeholder="Reason for contacting us"
+                  required={true}
                 />
               </div>
 
@@ -85,12 +93,14 @@ export default function Contact() {
                   rows="4"
                   className="w-full border rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#0A1F44]"
                   placeholder="Type your message here"
+                  required={true}
+               
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-[#0A1F44] text-white py-3 rounded-md hover:bg-blue-900 transition"
+                className="w-full bg-[#0A1F44] cursor-pointer text-white py-3 rounded-md hover:bg-blue-900 transition"
               >
                 Send Message
               </button>

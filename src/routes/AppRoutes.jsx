@@ -8,6 +8,7 @@ import Login from "../pages/auth/Login"
 import StudentDashboard from "../pages/student/StudentDashboard"
 import ParentDashboard from "../pages/parent/ParentDashboard"
 import AdminDashboard from "../pages/admin/Dashboard"
+import Enrollment from "../pages/enrollment/Enrollment"
 
 export default function AppRoutes() {
   return (
@@ -21,6 +22,7 @@ export default function AppRoutes() {
         <Route path="/student/dashboard" element={<StudentDashboard/>} />
         <Route path="/parent/dashboard" element={<ParentDashboard/>} />
         <Route path="/admin/dashboard" element={<AdminDashboard/>} />
+        <Route path="/enroll" element={<Enrollment/>} />
       </Routes>
     </>
   );

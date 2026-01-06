@@ -1,21 +1,20 @@
 export default function About() {
+
+
   return (
     <main className="pt-32 pb-24 bg-white">
       <div className="container mx-auto px-6 max-w-6xl">
-        {/* Page Header */}
         <section className="text-center max-w-3xl mx-auto">
           <h1 className="text-4xl font-bold text-[#0A1F44]">
-            About Hudin Secondary School
+            About Hudini School Of Science & Technology
           </h1>
           <p className="mt-6 text-gray-600 text-lg">
-            Hudin Secondary School is a reputable learning institution located
+            Hudini School Of Science & Technology is a reputable learning institution located
             in Victoria Falls, Zimbabwe, dedicated to providing quality
             secondary education grounded in discipline, excellence, and
             integrity.
           </p>
         </section>
-
-        {/* School Overview */}
         <section className="mt-20 grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-2xl font-semibold text-[#0A1F44] mb-4">
@@ -35,12 +34,12 @@ export default function About() {
           </div>
 
           <div className="bg-gray-100 rounded-xl h-72 flex items-center justify-center text-gray-400">
-            {/* Replace with real school image later */}
-            School Image Placeholder
+            <img
+              src="https://res.cloudinary.com/dptomokgz/image/upload/v1767715401/20251118_132117_jfsjuo.jpg"
+              alt="coming soon"
+            />
           </div>
         </section>
-
-        {/* Mission & Vision */}
         <section className="mt-24 grid md:grid-cols-2 gap-12">
           <div className="border rounded-xl p-8">
             <h3 className="text-xl font-semibold text-[#0A1F44] mb-4">
@@ -64,8 +63,6 @@ export default function About() {
             </p>
           </div>
         </section>
-
-        {/* Core Values */}
         <section className="mt-24">
           <h2 className="text-2xl font-semibold text-[#0A1F44] text-center mb-10">
             Our Core Values
@@ -87,11 +84,9 @@ export default function About() {
             ))}
           </div>
         </section>
-
-        {/* Why Choose Us */}
         <section className="mt-24 bg-gray-50 border rounded-xl p-12 text-center">
           <h2 className="text-2xl font-semibold text-[#0A1F44] mb-6">
-            Why Choose Hudin Secondary School?
+            Why Choose Hudini School Of Science & Technology?
           </h2>
 
           <p className="text-gray-700 max-w-3xl mx-auto leading-relaxed">

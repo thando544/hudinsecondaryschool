@@ -1,4 +1,8 @@
+
+import { Link } from "react-router-dom";
 export default function HeroSection() {
+
+
   return (
     <section className="min-h-screen bg-gradient-to-br from-white via-gray-50 to-gray-100 flex items-center">
       <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-14 items-center">
@@ -20,7 +24,7 @@ export default function HeroSection() {
 
           <div className="mt-8 flex flex-wrap gap-4">
             <button className="bg-[#0A1F44] text-white px-7 py-3 rounded-md hover:bg-blue-900 transition font-medium">
-              Apply for Enrollment
+              <Link to="/auth/login">Apply for Enrollment</Link>
             </button>
             <button className="border border-[#0A1F44] text-[#0A1F44] px-7 py-3 rounded-md hover:bg-[#0A1F44] hover:text-white transition font-medium">
               View School Prospectus
@@ -70,21 +74,24 @@ export default function HeroSection() {
               type="text"
               placeholder="Parent / Guardian Name"
               className="w-full border border-gray-300 px-4 py-3 rounded-md"
+              required
             />
 
             <input
               type="tel"
               placeholder="Parent Phone Number"
               className="w-full border border-gray-300 px-4 py-3 rounded-md"
+              required
             />
 
             <input
               type="email"
               placeholder="Parent Email Address"
               className="w-full border border-gray-300 px-4 py-3 rounded-md"
+              required
             />
 
-            <button className="w-full bg-[#0A1F44] text-white py-3 rounded-md hover:bg-blue-900 font-medium transition">
+            <button  className="w-full bg-[#0A1F44] text-white py-3 rounded-md hover:bg-blue-900 font-medium transition">
               Submit Application
             </button>
 
